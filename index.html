@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LatAm Data · Alertas de licitações</title>
+<meta name="description" content="Alertas diários de licitações novas do PNCP, filtrados pelas suas palavras-chave e estados.">
+<style>
+  :root { --bg:#0f1720; --card:#17212c; --text:#e8eef3; --muted:#9fb0bf; --accent:#2ec4b6; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--text); line-height:1.5; }
+  main { max-width:960px; margin:0 auto; padding:48px 16px; }
+  h1 { font-size:2rem; margin:0 0 8px; }
+  .sub { color:var(--muted); margin:0 0 32px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
+  .card { background:var(--card); border-radius:12px; padding:24px; display:flex; flex-direction:column; }
+  .card h2 { margin:0 0 4px; font-size:1.2rem; }
+  .price { font-size:1.8rem; font-weight:700; margin:8px 0; }
+  .price small { font-size:1rem; color:var(--muted); font-weight:400; }
+  ul { padding-left:18px; color:var(--muted); flex:1; }
+  .btn { display:block; text-align:center; background:var(--accent); color:#06231f; padding:12px; border-radius:8px; text-decoration:none; font-weight:600; margin-top:12px; }
+  .btn.alt { background:transparent; color:var(--accent); border:1px solid var(--accent); }
+  .usdc { margin-top:32px; background:var(--card); border-radius:12px; padding:16px 24px; color:var(--muted); font-size:.95rem; overflow-wrap:anywhere; }
+  code { color:var(--text); }
+  footer { margin-top:32px; color:var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Licitações novas, todo dia.</h1>
+  <p class="sub">Alertas do PNCP filtrados pelas suas palavras-chave e estados. Configuramos tudo para você. 14 dias grátis, sem cartão.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Grátis</h2>
+      <div class="price">R$ 0</div>
+      <ul>
+        <li>Canais públicos por segmento no Telegram</li>
+        <li>Brasil inteiro, várias vezes por dia</li>
+      </ul>
+      <a class="btn alt" href="https://t.me/licitacoes_limpeza">Limpeza</a>
+      <a class="btn alt" href="https://t.me/licitacoes_saude">Saúde</a>
+      <a class="btn alt" href="https://t.me/licitacoes_ti">TI</a>
+    </div>
+
+    <div class="card">
+      <h2>Alerta Pro</h2>
+      <div class="price">R$ 79 <small>/mês</small></div>
+      <ul>
+        <li>Suas palavras-chave e seus estados</li>
+        <li>No Telegram ou por e-mail</li>
+        <li>Resumo diário e suporte</li>
+        <li>Cancele quando quiser</li>
+      </ul>
+      <a class="btn" href="mailto:latamfxdata@gmail.com?subject=Teste%20gr%C3%A1tis%20Alerta%20Pro">Testar 14 dias grátis</a>
+    </div>
+
+    <div class="card">
+      <h2>Assessorias</h2>
+      <div class="price">R$ 490 <small>/mês</small></div>
+      <ul>
+        <li>Um alerta por cliente, até 30 clientes</li>
+        <li>Palavras-chave e estados de cada cliente</li>
+        <li>Configuração feita por nós</li>
+      </ul>
+      <a class="btn" href="mailto:latamfxdata@gmail.com?subject=Teste%20gr%C3%A1tis%20Assessoria">Testar 14 dias grátis</a>
+    </div>
+  </div>
+
+  <!-- USDC (Base): reactivar con la dirección 0x... · Pro USD 14/mês · Assessorias USD 85/mês -->
+
+  <p class="sub" style="margin-top:32px">Teste grátis: escreva para <a href="mailto:latamfxdata@gmail.com" style="color:var(--accent)">latamfxdata@gmail.com</a> com suas palavras-chave e estados.</p>
+
+  <footer>LatAm Data · Dados públicos do PNCP (Portal Nacional de Contratações Públicas).</footer>
+</main>
+</body>
+</html>
